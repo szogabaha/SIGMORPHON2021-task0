@@ -1,0 +1,4 @@
+target_dir: /dir
+pred_dir: /dir
+lang: afb
+extension: dev

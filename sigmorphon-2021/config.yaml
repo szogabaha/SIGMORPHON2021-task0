@@ -1,0 +1,21 @@
+config:
+  default_path: ~/botond/sigmorphon-2021/sigmorphon-2021/all_data/baseline_datagen/part1
+  language: all_plus_baseline_plus_copy
+  train: "${config.default_path}/${config.language}.train"
+  dev: "${config.default_path}/${config.language}.dev"
+
+model:
+  batch_size: 256
+  lrate: 0.001
+  enc_emb_size: 128
+  dec_emb_size: 128
+  enc_dropout: 0.6
+  dec_dropout: 0.6
+  hidden_size: 256
+  patience: 15
+  num_layers: 1
+  epochs: 500
+  model_file: /model.pt
+  load_model: False
+  use_vocab: False
+  vocab_dir: ~/botond/sigmorphon-2021/sigmorphon-2021/outputs/2021-04-26/14-36-39
